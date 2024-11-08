@@ -1,0 +1,932 @@
+<!-- Fase 1 -->
+<div class="bg-white rounded-xl shadow-md p-6 mb-6">
+    <div class="border-l-4 border-blue-600 pl-4 mb-8">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">Piano di Sviluppo Creator Platform - Fase 1</h2>
+        <p>
+            La Fase 1 del progetto si concentra sulle funzionalità core essenziali per il lancio della piattaforma. 
+            Distribuita su 6 sprint bisettimanali (480 ore totali), questa fase implementerà il sistema base di autenticazione, 
+            la gestione dei contenuti e il sistema di monetizzazione fondamentale.
+        </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <div class="bg-blue-50 p-4 rounded-lg border border-blue-100">
+            <div class="flex items-center space-x-2 mb-2">
+                <span class="material-symbols-outlined text-blue-600">rocket_launch</span>
+                <h4 class="font-medium text-blue-800">Core Features</h4>
+            </div>
+            <p class="text-sm">Setup e autenticazione</p>
+        </div>
+
+        <div class="bg-green-50 p-4 rounded-lg border border-green-100">
+            <div class="flex items-center space-x-2 mb-2">
+                <span class="material-symbols-outlined text-green-600">cloud_upload</span>
+                <h4 class="font-medium text-green-800">Content System</h4>
+            </div>
+            <p class="text-sm">Gestione contenuti base</p>
+        </div>
+
+        <div class="bg-purple-50 p-4 rounded-lg border border-purple-100">
+            <div class="flex items-center space-x-2 mb-2">
+                <span class="material-symbols-outlined text-purple-600">payments</span>
+                <h4 class="font-medium text-purple-800">Monetization</h4>
+            </div>
+            <p class="text-sm">Sistema abbonamenti base</p>
+        </div>
+    </div>
+
+    <div class="relative p-4 pt-8 bg-gradient-to-r from-blue-50 to-white rounded-lg border border-blue-100 mb-12">
+        <div class="flex justify-between mb-4">
+            <div class="text-center">
+                <div class="w-8 h-8 bg-blue-600 rounded-full mx-auto mb-2 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-white text-sm">settings</span>
+                </div>
+                Setup & Auth
+            </div>
+            <div class="text-center">
+                <div class="w-8 h-8 bg-green-600 rounded-full mx-auto mb-2 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-white text-sm">cloud_upload</span>
+                </div>
+                Content Mgmt
+            </div>
+            <div class="text-center">
+                <div class="w-8 h-8 bg-purple-600 rounded-full mx-auto mb-2 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-white text-sm">credit_card</span>
+                </div>
+                Payments
+            </div>
+        </div>
+        <div class="absolute left-0 right-0 top-14 h-0.5 bg-gray-200">
+            <div class="w-full h-full bg-gradient-to-r from-blue-600 via-green-600 to-purple-600"></div>
+        </div>
+    </div>
+
+    <!-- Sprint 1-2: Setup e Autenticazione -->
+    <div class="group border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all duration-300">
+        <div class="flex items-center justify-between mb-6">
+            <div class="flex items-center space-x-4">
+                <div class="p-2 bg-blue-50 rounded-lg group-hover:bg-blue-100 transition-colors">
+                    <span class="material-symbols-outlined text-blue-600 text-2xl">settings</span>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-blue-600">Sprint 1-2: Setup e Sistema Autenticazione</h3>
+                    <p>Configurazione ambiente e implementazione sistema auth (160 ore)</p>
+                </div>
+            </div>
+            <div class="bg-blue-50 group-hover:bg-blue-100 transition-colors px-4 py-2 rounded-full">
+                <div class="flex items-center space-x-2">
+                    <span class="material-symbols-outlined text-blue-600 text-sm">schedule</span>
+                    <span class="text-sm font-medium text-blue-800">4 settimane</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-blue-50 to-white p-4 rounded-lg border border-blue-100">
+            <h4 class="font-medium text-blue-800 mb-4 flex items-center">
+                <span class="material-symbols-outlined mr-2">target</span>
+                Obiettivi Principali
+            </h4>
+
+            <div class="space-y-4">
+                <div>
+                    <div class="flex items-start">
+                        <span class="material-symbols-outlined text-green-500 mt-1 mr-2">check_circle</span>
+                        <div>
+                            <h5 class="font-medium text-gray-800 mb-2">Setup Iniziale (40 ore)</h5>
+                            <p class="text-gray-600">Configurazione ambiente di sviluppo completo</p>
+                            <div class="mt-2 flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-blue-50 text-blue-700 text-xs rounded-full">Laravel Setup</span>
+                                <span class="px-2 py-1 bg-blue-50 text-blue-700 text-xs rounded-full">Vue.js Config</span>
+                                <span class="px-2 py-1 bg-blue-50 text-blue-700 text-xs rounded-full">Capacitor Init</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex items-start">
+                        <span class="material-symbols-outlined text-green-500 mt-1 mr-2">check_circle</span>
+                        <div>
+                            <h5 class="font-medium text-gray-800 mb-2">Sistema Auth Base (60 ore)</h5>
+                            <p class="text-gray-600">Implementazione login/registrazione creator e fan</p>
+                            <div class="mt-2 flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-blue-50 text-blue-700 text-xs rounded-full">JWT Auth</span>
+                                <span class="px-2 py-1 bg-blue-50 text-blue-700 text-xs rounded-full">Password Reset</span>
+                                <span class="px-2 py-1 bg-blue-50 text-blue-700 text-xs rounded-full">Email Verification</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex items-start">
+                        <span class="material-symbols-outlined text-green-500 mt-1 mr-2">check_circle</span>
+                        <div>
+                            <h5 class="font-medium text-gray-800 mb-2">Gestione Profili (60 ore)</h5>
+                            <p class="text-gray-600">Sistema completo di gestione profili creator/fan</p>
+                            <div class="mt-2 flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-blue-50 text-blue-700 text-xs rounded-full">Profile CRUD</span>
+                                <span class="px-2 py-1 bg-blue-50 text-blue-700 text-xs rounded-full">Role Management</span>
+                                <span class="px-2 py-1 bg-blue-50 text-blue-700 text-xs rounded-full">Settings</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                <h4 class="font-medium text-gray-800 mb-3 flex items-center">
+                    <span class="material-symbols-outlined mr-2 text-green-600">task_alt</span>
+                    Deliverables
+                </h4>
+                <ul class="space-y-2">
+                    <li class="flex items-center">
+                        <div class="w-1.5 h-1.5 bg-green-500 rounded-full mr-2"></div>
+                        <span class="text-gray-600">Ambiente di sviluppo configurato e testato</span>
+                    </li>
+                    <li class="flex items-center">
+                        <div class="w-1.5 h-1.5 bg-green-500 rounded-full mr-2"></div>
+                        <span class="text-gray-600">Sistema auth funzionante e sicuro</span>
+                    </li>
+                    <li class="flex items-center">
+                        <div class="w-1.5 h-1.5 bg-green-500 rounded-full mr-2"></div>
+                        <span class="text-gray-600">Gestione profili completa</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                <h4 class="font-medium text-gray-800 mb-3 flex items-center">
+                    <span class="material-symbols-outlined mr-2 text-blue-600">verified</span>
+                    Criteri di Accettazione
+                </h4>
+                <ul class="space-y-2">
+                    <li class="flex items-center">
+                        <div class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></div>
+                        <span class="text-gray-600">Test di integrazione superati</span>
+                    </li>
+                    <li class="flex items-center">
+                        <div class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></div>
+                        <span class="text-gray-600">Sicurezza verificata (pentest base)</span>
+                    </li>
+                    <li class="flex items-center">
+                        <div class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></div>
+                        <span class="text-gray-600">UI/UX responsive e testata</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sprint 3-4: Content Management -->
+    <div class="group border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all duration-300 mt-8">
+        <div class="flex items-center justify-between mb-6">
+            <div class="flex items-center space-x-4">
+                <div class="p-2 bg-green-50 rounded-lg group-hover:bg-green-100 transition-colors">
+                    <span class="material-symbols-outlined text-green-600 text-2xl">cloud_upload</span>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-green-600">Sprint 3-4: Content Management Base</h3>
+                    <p>Sistema di gestione contenuti e upload (160 ore)</p>
+                </div>
+            </div>
+            <div class="bg-green-50 group-hover:bg-green-100 transition-colors px-4 py-2 rounded-full">
+                <div class="flex items-center space-x-2">
+                    <span class="material-symbols-outlined text-green-600 text-sm">schedule</span>
+                    <span class="text-sm font-medium text-green-800">4 settimane</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-green-50 to-white p-4 rounded-lg border border-green-100">
+            <h4 class="font-medium text-green-800 mb-4 flex items-center">
+                <span class="material-symbols-outlined mr-2">target</span>
+                Obiettivi Principali
+            </h4>
+
+            <div class="space-y-4">
+                <div>
+                    <div class="flex items-start">
+                        <span class="material-symbols-outlined text-green-500 mt-1 mr-2">check_circle</span>
+                        <div>
+                            <h5 class="font-medium text-gray-800 mb-2">Sistema Upload Base (80 ore)</h5>
+                            <p class="text-gray-600">Implementazione upload su S3 e gestione file</p>
+                            <div class="mt-2 flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-green-50 text-green-700 text-xs rounded-full">S3 Integration</span>
+                                <span class="px-2 py-1 bg-green-50 text-green-700 text-xs rounded-full">File Validation</span>
+                                <span class="px-2 py-1 bg-green-50 text-green-700 text-xs rounded-full">Progress Tracking</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex items-start">
+                        <span class="material-symbols-outlined text-green-500 mt-1 mr-2">check_circle</span>
+                        <div>
+                            <h5 class="font-medium text-gray-800 mb-2">Content Organization (50 ore)</h5>
+                            <p class="text-gray-600">Sistema di organizzazione e categorizzazione contenuti</p>
+                            <div class="mt-2 flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-green-50 text-green-700 text-xs rounded-full">Categories</span>
+                                <span class="px-2 py-1 bg-green-50 text-green-700 text-xs rounded-full">Tags</span>
+                                <span class="px-2 py-1 bg-green-50 text-green-700 text-xs rounded-full">Media Library</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex items-start">
+                        <span class="material-symbols-outlined text-green-500 mt-1 mr-2">check_circle</span>
+                        <div>
+                            <h5 class="font-medium text-gray-800 mb-2">Media Processing Base (30 ore)</h5>
+                            <p class="text-gray-600">Processamento base immagini e video</p>
+                            <div class="mt-2 flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-green-50 text-green-700 text-xs rounded-full">Image Resize</span>
+                                <span class="px-2 py-1 bg-green-50 text-green-700 text-xs rounded-full">Thumbnails</span>
+                                <span class="px-2 py-1 bg-green-50 text-green-700 text-xs rounded-full">Video Preview</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                <h4 class="font-medium text-gray-800 mb-3 flex items-center">
+                    <span class="material-symbols-outlined mr-2 text-green-600">task_alt</span>
+                    Deliverables
+                </h4>
+                <ul class="space-y-2">
+                    <li class="flex items-center">
+                        <div class="w-1.5 h-1.5 bg-green-500 rounded-full mr-2"></div>
+                        <span class="text-gray-600">Sistema upload funzionante con S3</span>
+                    </li>
+                    <li class="flex items-center">
+                        <div class="w-1.5 h-1.5 bg-green-500 rounded-full mr-2"></div>
+                        <span class="text-gray-600">Libreria media organizzata</span>
+                    </li>
+                    <li class="flex items-center">
+                        <div class="w-1.5 h-1.5 bg-green-500 rounded-full mr-2"></div>
+                        <span class="text-gray-600">Processamento base media</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                <h4 class="font-medium text-gray-800 mb-3 flex items-center">
+                    <span class="material-symbols-outlined mr-2 text-blue-600">verified</span>
+                    Criteri di Accettazione
+                </h4>
+                <ul class="space-y-2">
+                    <li class="flex items-center">
+                        <div class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></div>
+                        <span class="text-gray-600">Upload file fino a 500MB testato</span>
+                    </li>
+                    <li class="flex items-center">
+                        <div class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></div>
+                        <span class="text-gray-600">Categorizzazione funzionante</span>
+                    </li>
+                    <li class="flex items-center">
+                        <div class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></div>
+                        <span class="text-gray-600">Preview media verificate</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sprint 5-6: Sistema Pagamenti -->
+    <div class="group border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all duration-300 mt-8">
+        <div class="flex items-center justify-between mb-6">
+            <div class="flex items-center space-x-4">
+                <div class="p-2 bg-purple-50 rounded-lg group-hover:bg-purple-100 transition-colors">
+                    <span class="material-symbols-outlined text-purple-600 text-2xl">payments</span>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-purple-600">Sprint 5-6: Sistema Pagamenti Base</h3>
+                    <p>Implementazione sistema abbonamenti e pagamenti (160 ore)</p>
+                </div>
+            </div>
+            <div class="bg-purple-50 group-hover:bg-purple-100 transition-colors px-4 py-2 rounded-full">
+                <div class="flex items-center space-x-2">
+                    <span class="material-symbols-outlined text-purple-600 text-sm">schedule</span>
+                    <span class="text-sm font-medium text-purple-800">4 settimane</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-purple-50 to-white p-4 rounded-lg border border-purple-100">
+            <h4 class="font-medium text-purple-800 mb-4 flex items-center">
+                <span class="material-symbols-outlined mr-2">target</span>
+                Obiettivi Principali
+            </h4>
+
+            <div class="space-y-4">
+                <div>
+                    <div class="flex items-start">
+                        <span class="material-symbols-outlined text-green-500 mt-1 mr-2">check_circle</span>
+                        <div>
+                            <h5 class="font-medium text-gray-800 mb-2">Stripe Connect Base (70 ore)</h5>
+                            <p class="text-gray-600">Integrazione base Stripe per pagamenti e account creator</p>
+                            <div class="mt-2 flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-purple-50 text-purple-700 text-xs rounded-full">Stripe Setup</span>
+                                <span class="px-2 py-1 bg-purple-50 text-purple-700 text-xs rounded-full">Connect Accounts</span>
+                                <span class="px-2 py-1 bg-purple-50 text-purple-700 text-xs rounded-full">Webhook Base</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex items-start">
+                        <span class="material-symbols-outlined text-green-500 mt-1 mr-2">check_circle</span>
+                        <div>
+                            <h5 class="font-medium text-gray-800 mb-2">Sistema Abbonamenti (50 ore)</h5>
+                            <p class="text-gray-600">Gestione abbonamenti e accessi premium base</p>
+                            <div class="mt-2 flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-purple-50 text-purple-700 text-xs rounded-full">Subscription Plans</span>
+                                <span class="px-2 py-1 bg-purple-50 text-purple-700 text-xs rounded-full">Access Control</span>
+                                <span class="px-2 py-1 bg-purple-50 text-purple-700 text-xs rounded-full">Billing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex items-start">
+                        <span class="material-symbols-outlined text-green-500 mt-1 mr-2">check_circle</span>
+                        <div>
+                            <h5 class="font-medium text-gray-800 mb-2">Dashboard Base (40 ore)</h5>
+                            <p class="text-gray-600">Dashboard base per creator con metriche essenziali</p>
+                            <div class="mt-2 flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-purple-50 text-purple-700 text-xs rounded-full">Revenue Stats</span>
+                                <span class="px-2 py-1 bg-purple-50 text-purple-700 text-xs rounded-full">Subscriber Count</span>
+                                <span class="px-2 py-1 bg-purple-50 text-purple-700 text-xs rounded-full">Basic Reports</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                <h4 class="font-medium text-gray-800 mb-3 flex items-center">
+                    <span class="material-symbols-outlined mr-2 text-green-600">task_alt</span>
+                    Deliverables
+                </h4>
+                <ul class="space-y-2">
+                    <li class="flex items-center">
+                        <div class="w-1.5 h-1.5 bg-green-500 rounded-full mr-2"></div>
+                        <span class="text-gray-600">Integrazione Stripe completata</span>
+                    </li>
+                    <li class="flex items-center">
+                        <div class="w-1.5 h-1.5 bg-green-500 rounded-full mr-2"></div>
+                        <span class="text-gray-600">Sistema abbonamenti funzionante</span>
+                    </li>
+                    <li class="flex items-center">
+                        <div class="w-1.5 h-1.5 bg-green-500 rounded-full mr-2"></div>
+                        <span class="text-gray-600">Dashboard base operativa</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                <h4 class="font-medium text-gray-800 mb-3 flex items-center">
+                    <span class="material-symbols-outlined mr-2 text-blue-600">verified</span>
+                    Criteri di Accettazione
+                </h4>
+                <ul class="space-y-2">
+                    <li class="flex items-center">
+                        <div class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></div>
+                        <span class="text-gray-600">Pagamenti testati con successo</span>
+                    </li>
+                    <li class="flex items-center">
+                        <div class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></div>
+                        <span class="text-gray-600">Gestione errori implementata</span>
+                    </li>
+                    <li class="flex items-center">
+                        <div class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></div>
+                        <span class="text-gray-600">Metriche base funzionanti</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Note Tecniche Fase 1 -->
+    <div class="bg-gradient-to-br from-gray-50 to-white p-6 rounded-xl border border-gray-100 space-y-6 mt-12">
+        <h3 class="text-lg font-semibold text-gray-800 flex items-center">
+            <span class="material-symbols-outlined text-blue-600 mr-2">info</span>
+            Note Tecniche Fase 1
+        </h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="bg-white p-4 rounded-lg border border-gray-100">
+                <h4 class="font-medium text-gray-800 mb-3 flex items-center">
+                    <span class="material-symbols-outlined text-gray-600 mr-2 text-sm">build</span>
+                    Stack Tecnico
+                </h4>
+                <ul class="text-sm text-gray-600 space-y-1">
+                    <li>• Laravel (Backend)</li>
+                    <li>• Vue.js (Frontend)</li>
+                    <li>• Capacitor (Mobile)</li>
+                    <li>• MySQL (Database)</li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-4 rounded-lg border border-gray-100">
+                <h4 class="font-medium text-gray-800 mb-3 flex items-center">
+                    <span class="material-symbols-outlined text-gray-600 mr-2 text-sm">cloud</span>
+                    Infrastruttura
+                </h4>
+                <ul class="text-sm text-gray-600 space-y-1">
+                    <li>• AWS S3 Storage</li>
+                    <li>• Basic CDN</li>
+                    <li>• Server Staging/Prod</li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-4 rounded-lg border border-gray-100">
+                <h4 class="font-medium text-gray-800 mb-3 flex items-center">
+                    <span class="material-symbols-outlined text-gray-600 mr-2 text-sm">memory</span>
+                    Considerazioni
+                </h4>
+                <ul class="text-sm text-gray-600 space-y-1">
+                    <li>• Scalabilità futura</li>
+                    <li>• Performance base</li>
+                    <li>• Sicurezza essenziale</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Fase 2 -->
+<div class="bg-white rounded-xl shadow-md p-6 mb-6">
+    <div class="border-l-4 border-blue-600 pl-4 mb-8">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">Piano di Sviluppo Creator Platform - Fase 2</h2>
+        <p>
+            La Fase 2 del progetto implementa le funzionalità avanzate della piattaforma, costruendo sulle basi solide della Fase 1. 
+            Questa fase include il sistema di chat, le donazioni, l'analytics avanzato e le ottimizzazioni di performance.
+        </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <div class="bg-blue-50 p-4 rounded-lg border border-blue-100">
+            <div class="flex items-center space-x-2 mb-2">
+                <span class="material-symbols-outlined text-blue-600">chat</span>
+                <h4 class="font-medium text-blue-800">Chat System</h4>
+            </div>
+            <p class="text-sm">Messaggistica e interazione</p>
+        </div>
+
+        <div class="bg-green-50 p-4 rounded-lg border border-green-100">
+            <div class="flex items-center space-x-2 mb-2">
+                <span class="material-symbols-outlined text-green-600">analytics</span>
+                <h4 class="font-medium text-green-800">Advanced Analytics</h4>
+            </div>
+            <p class="text-sm">Metriche e reporting avanzati</p>
+        </div>
+
+        <div class="bg-purple-50 p-4 rounded-lg border border-purple-100">
+            <div class="flex items-center space-x-2 mb-2">
+                <span class="material-symbols-outlined text-purple-600">diamond</span>
+                <h4 class="font-medium text-purple-800">Premium Features</h4>
+            </div>
+            <p class="text-sm">Funzionalità avanzate</p>
+        </div>
+    </div>
+
+    <div class="relative p-4 pt-8 bg-gradient-to-r from-blue-50 to-white rounded-lg border border-blue-100 mb-12">
+        <div class="flex justify-between mb-4">
+            <div class="text-center">
+                <div class="w-8 h-8 bg-blue-600 rounded-full mx-auto mb-2 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-white text-sm">chat</span>
+                </div>
+                Chat & Interazioni
+            </div>
+            <div class="text-center">
+                <div class="w-8 h-8 bg-green-600 rounded-full mx-auto mb-2 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-white text-sm">monitoring</span>
+                </div>
+                Analytics
+            </div>
+            <div class="text-center">
+                <div class="w-8 h-8 bg-purple-600 rounded-full mx-auto mb-2 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-white text-sm">auto_awesome</span>
+                </div>
+                Premium
+            </div>
+        </div>
+        <div class="absolute left-0 right-0 top-14 h-0.5 bg-gray-200">
+            <div class="w-full h-full bg-gradient-to-r from-blue-600 via-green-600 to-purple-600"></div>
+        </div>
+    </div>
+
+    <!-- Sprint 7-8: Sistema Chat e Interazioni -->
+    <div class="group border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all duration-300">
+        <div class="flex items-center justify-between mb-6">
+            <div class="flex items-center space-x-4">
+                <div class="p-2 bg-blue-50 rounded-lg group-hover:bg-blue-100 transition-colors">
+                    <span class="material-symbols-outlined text-blue-600 text-2xl">chat</span>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-blue-600">Sprint 7-8: Sistema Chat e Interazioni</h3>
+                    <p>Implementazione sistema di messaggistica e interazioni (160 ore)</p>
+                </div>
+            </div>
+            <div class="bg-blue-50 group-hover:bg-blue-100 transition-colors px-4 py-2 rounded-full">
+                <div class="flex items-center space-x-2">
+                    <span class="material-symbols-outlined text-blue-600 text-sm">schedule</span>
+                    <span class="text-sm font-medium text-blue-800">4 settimane</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-blue-50 to-white p-4 rounded-lg border border-blue-100">
+            <h4 class="font-medium text-blue-800 mb-4 flex items-center">
+                <span class="material-symbols-outlined mr-2">target</span>
+                Obiettivi Principali
+            </h4>
+
+            <div class="space-y-4">
+                <div>
+                    <div class="flex items-start">
+                        <span class="material-symbols-outlined text-green-500 mt-1 mr-2">check_circle</span>
+                        <div>
+                            <h5 class="font-medium text-gray-800 mb-2">Sistema Chat Real-time (70 ore)</h5>
+                            <p class="text-gray-600">Implementazione chat in tempo reale tra creator e fan</p>
+                            <div class="mt-2 flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-blue-50 text-blue-700 text-xs rounded-full">WebSocket</span>
+                                <span class="px-2 py-1 bg-blue-50 text-blue-700 text-xs rounded-full">Real-time Updates</span>
+                                <span class="px-2 py-1 bg-blue-50 text-blue-700 text-xs rounded-full">Chat History</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex items-start">
+                        <span class="material-symbols-outlined text-green-500 mt-1 mr-2">check_circle</span>
+                        <div>
+                            <h5 class="font-medium text-gray-800 mb-2">Sistema Notifiche (50 ore)</h5>
+                            <p class="text-gray-600">Notifiche push e in-app per interazioni</p>
+                            <div class="mt-2 flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-blue-50 text-blue-700 text-xs rounded-full">Push Notifications</span>
+                                <span class="px-2 py-1 bg-blue-50 text-blue-700 text-xs rounded-full">In-app Alerts</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex items-start">
+                        <span class="material-symbols-outlined text-green-500 mt-1 mr-2">check_circle</span>
+                        <div>
+                            <h5 class="font-medium text-gray-800 mb-2">Gestione Richieste Custom (40 ore)</h5>
+                            <p class="text-gray-600">Sistema di richieste contenuti personalizzati</p>
+                            <div class="mt-2 flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-blue-50 text-blue-700 text-xs rounded-full">Custom Requests</span>
+                                <span class="px-2 py-1 bg-blue-50 text-blue-700 text-xs rounded-full">Request Tracking</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                <h4 class="font-medium text-gray-800 mb-3 flex items-center">
+                    <span class="material-symbols-outlined mr-2 text-green-600">task_alt</span>
+                    Deliverables
+                </h4>
+                <ul class="space-y-2">
+                    <li class="flex items-center">
+                        <div class="w-1.5 h-1.5 bg-green-500 rounded-full mr-2"></div>
+                        <span class="text-gray-600">Sistema chat real-time funzionante</span>
+                    </li>
+                    <li class="flex items-center">
+                        <div class="w-1.5 h-1.5 bg-green-500 rounded-full mr-2"></div>
+                        <span class="text-gray-600">Notifiche configurate e testate</span>
+                    </li>
+                    <li class="flex items-center">
+                        <div class="w-1.5 h-1.5 bg-green-500 rounded-full mr-2"></div>
+                        <span class="text-gray-600">Sistema richieste personalizzate</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                <h4 class="font-medium text-gray-800 mb-3 flex items-center">
+                    <span class="material-symbols-outlined mr-2 text-blue-600">verified</span>
+                    Criteri di Accettazione
+                </h4>
+                <ul class="space-y-2">
+                    <li class="flex items-center">
+                        <div class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></div>
+                        <span class="text-gray-600">Latenza chat < 500ms</span>
+                    </li>
+                    <li class="flex items-center">
+                        <div class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></div>
+                        <span class="text-gray-600">Notifiche consegnate < 1s</span>
+                    </li>
+                    <li class="flex items-center">
+                        <div class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></div>
+                        <span class="text-gray-600">UI/UX testata con utenti</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sprint 9-10: Analytics Avanzato -->
+    <div class="group border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all duration-300 mt-8">
+        <div class="flex items-center justify-between mb-6">
+            <div class="flex items-center space-x-4">
+                <div class="p-2 bg-green-50 rounded-lg group-hover:bg-green-100 transition-colors">
+                    <span class="material-symbols-outlined text-green-600 text-2xl">monitoring</span>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-green-600">Sprint 9-10: Analytics Avanzato</h3>
+                    <p>Sistema di analytics e reportistica avanzata (160 ore)</p>
+                </div>
+            </div>
+            <div class="bg-green-50 group-hover:bg-green-100 transition-colors px-4 py-2 rounded-full">
+                <div class="flex items-center space-x-2">
+                    <span class="material-symbols-outlined text-green-600 text-sm">schedule</span>
+                    <span class="text-sm font-medium text-green-800">4 settimane</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-green-50 to-white p-4 rounded-lg border border-green-100">
+            <h4 class="font-medium text-green-800 mb-4 flex items-center">
+                <span class="material-symbols-outlined mr-2">target</span>
+                Obiettivi Principali
+            </h4>
+
+            <div class="space-y-4">
+                <div>
+                    <div class="flex items-start">
+                        <span class="material-symbols-outlined text-green-500 mt-1 mr-2">check_circle</span>
+                        <div>
+                            <h5 class="font-medium text-gray-800 mb-2">Dashboard Analytics (70 ore)</h5>
+                            <p class="text-gray-600">Dashboard avanzata con metriche dettagliate e visualizzazioni</p>
+                            <div class="mt-2 flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-green-50 text-green-700 text-xs rounded-full">Data Visualization</span>
+                                <span class="px-2 py-1 bg-green-50 text-green-700 text-xs rounded-full">Real-time Stats</span>
+                                <span class="px-2 py-1 bg-green-50 text-green-700 text-xs rounded-full">Custom Reports</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex items-start">
+                        <span class="material-symbols-outlined text-green-500 mt-1 mr-2">check_circle</span>
+                        <div>
+                            <h5 class="font-medium text-gray-800 mb-2">Metriche Avanzate (50 ore)</h5>
+                            <p class="text-gray-600">Implementazione KPI e metriche di performance</p>
+                            <div class="mt-2 flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-green-50 text-green-700 text-xs rounded-full">Engagement Metrics</span>
+                                <span class="px-2 py-1 bg-green-50 text-green-700 text-xs rounded-full">Revenue Analytics</span>
+                                <span class="px-2 py-1 bg-green-50 text-green-700 text-xs rounded-full">Growth Tracking</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex items-start">
+                        <span class="material-symbols-outlined text-green-500 mt-1 mr-2">check_circle</span>
+                        <div>
+                            <h5 class="font-medium text-gray-800 mb-2">Export e Reportistica (40 ore)</h5>
+                            <p class="text-gray-600">Sistema di export dati e reportistica personalizzata</p>
+                            <div class="mt-2 flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-green-50 text-green-700 text-xs rounded-full">PDF Reports</span>
+                                <span class="px-2 py-1 bg-green-50 text-green-700 text-xs rounded-full">CSV Export</span>
+                                <span class="px-2 py-1 bg-green-50 text-green-700 text-xs rounded-full">Scheduled Reports</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                <h4 class="font-medium text-gray-800 mb-3 flex items-center">
+                    <span class="material-symbols-outlined mr-2 text-green-600">task_alt</span>
+                    Deliverables
+                </h4>
+                <ul class="space-y-2">
+                    <li class="flex items-center">
+                        <div class="w-1.5 h-1.5 bg-green-500 rounded-full mr-2"></div>
+                        <span class="text-gray-600">Dashboard analytics completa</span>
+                    </li>
+                    <li class="flex items-center">
+                        <div class="w-1.5 h-1.5 bg-green-500 rounded-full mr-2"></div>
+                        <span class="text-gray-600">Sistema KPI implementato</span>
+                    </li>
+                    <li class="flex items-center">
+                        <div class="w-1.5 h-1.5 bg-green-500 rounded-full mr-2"></div>
+                        <span class="text-gray-600">Export funzionanti</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                <h4 class="font-medium text-gray-800 mb-3 flex items-center">
+                    <span class="material-symbols-outlined mr-2 text-blue-600">verified</span>
+                    Criteri di Accettazione
+                </h4>
+                <ul class="space-y-2">
+                    <li class="flex items-center">
+                        <div class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></div>
+                        <span class="text-gray-600">Dati accurati verificati</span>
+                    </li>
+                    <li class="flex items-center">
+                        <div class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></div>
+                        <span class="text-gray-600">Performance dashboard < 2s</span>
+                    </li>
+                    <li class="flex items-center">
+                        <div class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></div>
+                        <span class="text-gray-600">Export formati validati</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sprint 11-12: Features Premium -->
+    <div class="group border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all duration-300 mt-8">
+        <div class="flex items-center justify-between mb-6">
+            <div class="flex items-center space-x-4">
+                <div class="p-2 bg-purple-50 rounded-lg group-hover:bg-purple-100 transition-colors">
+                    <span class="material-symbols-outlined text-purple-600 text-2xl">auto_awesome</span>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-purple-600">Sprint 11-12: Funzionalità Premium</h3>
+                    <p>Implementazione funzionalità avanzate e ottimizzazioni (160 ore)</p>
+                </div>
+            </div>
+            <div class="bg-purple-50 group-hover:bg-purple-100 transition-colors px-4 py-2 rounded-full">
+                <div class="flex items-center space-x-2">
+                    <span class="material-symbols-outlined text-purple-600 text-sm">schedule</span>
+                    <span class="text-sm font-medium text-purple-800">4 settimane</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-purple-50 to-white p-4 rounded-lg border border-purple-100">
+            <h4 class="font-medium text-purple-800 mb-4 flex items-center">
+                <span class="material-symbols-outlined mr-2">target</span>
+                Obiettivi Principali
+            </h4>
+
+            <div class="space-y-4">
+                <div>
+                    <div class="flex items-start">
+                        <span class="material-symbols-outlined text-green-500 mt-1 mr-2">check_circle</span>
+                        <div>
+                            <h5 class="font-medium text-gray-800 mb-2">Sistema Donazioni (70 ore)</h5>
+                            <p class="text-gray-600">Implementazione donazioni con messaggi e alert</p>
+                            <div class="mt-2 flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-purple-50 text-purple-700 text-xs rounded-full">Donation Flow</span>
+                                <span class="px-2 py-1 bg-purple-50 text-purple-700 text-xs rounded-full">Custom Alerts</span>
+                                <span class="px-2 py-1 bg-purple-50 text-purple-700 text-xs rounded-full">Audio Messages</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex items-start">
+                        <span class="material-symbols-outlined text-green-500 mt-1 mr-2">check_circle</span>
+                        <div>
+                            <h5 class="font-medium text-gray-800 mb-2">Ottimizzazione Media (50 ore)</h5>
+                            <p class="text-gray-600">Sistema avanzato di ottimizzazione contenuti</p>
+                            <div class="mt-2 flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-purple-50 text-purple-700 text-xs rounded-full">Advanced CDN</span>
+                                <span class="px-2 py-1 bg-purple-50 text-purple-700 text-xs rounded-full">Video Processing</span>
+                                <span class="px-2 py-1 bg-purple-50 text-purple-700 text-xs rounded-full">Quality Settings</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex items-start">
+                        <span class="material-symbols-outlined text-green-500 mt-1 mr-2">check_circle</span>
+                        <div>
+                            <h5 class="font-medium text-gray-800 mb-2">Features Premium (40 ore)</h5>
+                            <p class="text-gray-600">Badge fedeltà e funzionalità esclusive</p>
+                            <div class="mt-2 flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-purple-50 text-purple-700 text-xs rounded-full">Loyalty System</span>
+                                <span class="px-2 py-1 bg-purple-50 text-purple-700 text-xs rounded-full">Premium Badges</span>
+                                <span class="px-2 py-1 bg-purple-50 text-purple-700 text-xs rounded-full">Special Access</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                <h4 class="font-medium text-gray-800 mb-3 flex items-center">
+                    <span class="material-symbols-outlined mr-2 text-green-600">task_alt</span>
+                    Deliverables
+                </h4>
+                <ul class="space-y-2">
+                    <li class="flex items-center">
+                        <div class="w-1.5 h-1.5 bg-green-500 rounded-full mr-2"></div>
+                        <span class="text-gray-600">Sistema donazioni completo</span>
+                    </li>
+                    <li class="flex items-center">
+                        <div class="w-1.5 h-1.5 bg-green-500 rounded-full mr-2"></div>
+                        <span class="text-gray-600">CDN ottimizzato</span>
+                    </li>
+                    <li class="flex items-center">
+                        <div class="w-1.5 h-1.5 bg-green-500 rounded-full mr-2"></div>
+                        <span class="text-gray-600">Features premium attive</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                <h4 class="font-medium text-gray-800 mb-3 flex items-center">
+                    <span class="material-symbols-outlined mr-2 text-blue-600">verified</span>
+                    Criteri di Accettazione
+                </h4>
+                <ul class="space-y-2">
+                    <li class="flex items-center">
+                        <div class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></div>
+                        <span class="text-gray-600">Donazioni processate < 1s</span>
+                    </li>
+                    <li class="flex items-center">
+                        <div class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></div>
+                        <span class="text-gray-600">Loading video < 2s</span>
+                    </li>
+                    <li class="flex items-center">
+                        <div class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></div>
+                        <span class="text-gray-600">Badge system testato</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Note Tecniche Fase 2 -->
+    <div class="bg-gradient-to-br from-gray-50 to-white p-6 rounded-xl border border-gray-100 space-y-6 mt-12">
+        <h3 class="text-lg font-semibold text-gray-800 flex items-center">
+            <span class="material-symbols-outlined text-blue-600 mr-2">info</span>
+            Note Tecniche Fase 2
+        </h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="bg-white p-4 rounded-lg border border-gray-100">
+                <h4 class="font-medium text-gray-800 mb-3 flex items-center">
+                    <span class="material-symbols-outlined text-gray-600 mr-2 text-sm">rocket_launch</span>
+                    Performance
+                </h4>
+                <ul class="text-sm text-gray-600 space-y-1">
+                    <li>• CDN ottimizzato</li>
+                    <li>• Caching avanzato</li>
+                    <li>• Load balancing</li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-4 rounded-lg border border-gray-100">
+                <h4 class="font-medium text-gray-800 mb-3 flex items-center">
+                    <span class="material-symbols-outlined text-gray-600 mr-2 text-sm">security</span>
+                    Sicurezza
+                </h4>
+                <ul class="text-sm text-gray-600 space-y-1">
+                    <li>• DDoS protection</li>
+                    <li>• Content protection</li>
+                    <li>• Payment security</li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-4 rounded-lg border border-gray-100">
+                <h4 class="font-medium text-gray-800 mb-3 flex items-center">
+                    <span class="material-symbols-outlined text-gray-600 mr-2 text-sm">monitoring</span>
+                    Monitoring
+                </h4>
+                <ul class="text-sm text-gray-600 space-y-1">
+                    <li>• Real-time metrics</li>
+                    <li>• Error tracking</li>
+                    <li>• Performance monitoring</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+

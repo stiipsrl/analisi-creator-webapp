@@ -1,0 +1,138 @@
+<div class="w-[360px] h-[640px] border-[12px] border-gray-800 rounded-[32px] mx-auto my-8 overflow-hidden relative bg-gray-50 shadow-2xl">
+    <div class="h-full overflow-y-auto">
+        <!-- Status Bar -->
+        <div class="bg-gray-800 text-white px-4 py-2 flex justify-between items-center text-xs">
+            9:41
+            <div class="flex items-center space-x-2">
+                <span class="material-symbols-outlined text-sm">signal_cellular_alt</span>
+                <span class="material-symbols-outlined text-sm">wifi</span>
+                <span class="material-symbols-outlined text-sm">battery_full</span>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <div class="bg-gradient-to-r from-purple-600 to-purple-500 text-white px-4 py-4 sticky top-0 z-10">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 rounded-full bg-white p-1">
+                        <span class="material-symbols-outlined text-purple-600">person</span>
+                    </div>
+                    <div>
+                        <div class="text-lg font-medium">Creator Platform</div>
+                        <div class="text-sm opacity-80">@johndoe</div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <span class="material-symbols-outlined cursor-pointer hover:text-purple-200 transition-colors">notifications</span>
+                    <div class="absolute -top-1 -right-1 w-2 h-2 bg-red-500 rounded-full"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content Area -->
+        <div class="p-4 space-y-6" style="padding-bottom: 150px">
+            <!-- Stats Card -->
+            <div class="bg-white rounded-xl shadow-sm p-6 border border-gray-100 transform hover:scale-[1.02] transition-transform">
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
+                        <span class="material-symbols-outlined text-purple-600">trending_up</span>
+                    </div>
+                    <div>
+                        <div class="text-lg font-medium text-gray-800">Panoramica</div>
+                        <div class="text-sm text-gray-600">Questo mese</div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-3 gap-4 mt-6">
+                    <div class="text-center">
+                        <div class="text-2xl font-semibold text-purple-600">152</div>
+                        <div class="text-xs text-gray-600">Abbonati</div>
+                    </div>
+                    <div class="text-center border-l border-r border-gray-200">
+                        <div class="text-2xl font-semibold text-green-600">€1,250</div>
+                        <div class="text-xs text-gray-600">Guadagni</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-semibold text-blue-600">24</div>
+                        <div class="text-xs text-gray-600">Post</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Content -->
+            <div class="bg-white rounded-xl shadow-sm p-6 border border-gray-100">
+                <div class="flex justify-between items-center mb-6">
+                    <div class="text-lg font-medium text-gray-800 flex items-center">
+                        <span class="material-symbols-outlined mr-2 text-purple-600">photo_library</span>
+                        Contenuti Recenti
+                    </div>
+                    <span class="text-sm text-purple-600">Vedi tutti</span>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3 p-3 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="w-12 h-12 bg-gray-200 rounded-lg flex items-center justify-center">
+                            <span class="material-symbols-outlined text-gray-600">image</span>
+                        </div>
+                        <div class="flex-1">
+                            <div class="font-medium text-gray-800">Nuovo post fotografico</div>
+                            <div class="text-sm text-gray-600">2 ore fa • 45 likes</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-3 p-3 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="w-12 h-12 bg-gray-200 rounded-lg flex items-center justify-center">
+                            <span class="material-symbols-outlined text-gray-600">videocam</span>
+                        </div>
+                        <div class="flex-1">
+                            <div class="font-medium text-gray-800">Video esclusivo</div>
+                            <div class="text-sm text-gray-600">5 ore fa • 128 views</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Messages Preview -->
+            <div class="bg-white rounded-xl shadow-sm p-6 border border-gray-100">
+                <div class="flex justify-between items-center mb-6">
+                    <div class="text-lg font-medium text-gray-800 flex items-center">
+                        <span class="material-symbols-outlined mr-2 text-purple-600">chat</span>
+                        Messaggi Recenti
+                    </div>
+                    <span class="text-sm text-purple-600">Vedi tutti</span>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3 p-3 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                            <span class="text-blue-600 font-medium">AS</span>
+                        </div>
+                        <div class="flex-1">
+                            <div class="font-medium text-gray-800">Alice Smith</div>
+                            <div class="text-sm text-gray-600">Grazie per il contenuto...</div>
+                        </div>
+                        <div class="w-2 h-2 bg-purple-600 rounded-full"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Navigation -->
+        <div class="absolute bottom-0 left-0 right-0 bg-white border-t border-gray-200 px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex flex-col items-center">
+                    <span class="material-symbols-outlined">home</span>
+                    <span class="text-xs mt-1">Home</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <span class="material-symbols-outlined">photo_library</span>
+                    <span class="text-xs mt-1">Content</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <span class="material-symbols-outlined">analytics</span>
+                    <span class="text-xs mt-1">Stats</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <span class="material-symbols-outlined">person</span>
+                    <span class="text-xs mt-1">Profile</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
