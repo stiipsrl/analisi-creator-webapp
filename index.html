@@ -21,14 +21,14 @@
 <body class="bg-gray-50">
     <!-- Top App Bar -->
     <header class="fixed top-0 w-full bg-blue-600 text-white z-50">
-        <div class="flex items-center px-6 py-4">
-            <span class="material-symbols-outlined mr-4">smart_display</span>
-            <span class="text-xl font-medium">Creator Web App - Presentazione Progetto</span>
+        <div class="flex items-center px-4 sm:px-6 py-3 sm:py-4">
+            <span class="material-symbols-outlined mr-3 sm:mr-4 text-base sm:text-base md:text-xl">smart_display</span>
+            <span class="text-base sm:text-lg md:text-xl font-medium truncate">Creator WebApp - Presentazione Progetto</span>
         </div>
     </header>
 
     <!-- Navigation Menu -->
-    <nav class="sticky top-16 z-40 bg-white border-b border-gray-200 px-4 py-2" style="top: 60px;">
+    <nav class="sticky top-16 z-40 bg-white border-b border-gray-200 px-0 sm:px-4 py-2" style="top: 60px;">
         <div class="max-w-7xl mx-auto flex gap-2 overflow-x-auto hide-scrollbar">
             <button onclick="showTab('overview')" id="nav-overview" 
                     class="nav-button active inline-flex items-center px-6 py-3 rounded-full text-sm font-medium transition-all">
@@ -42,8 +42,8 @@
             </button>
             <button onclick="showTab('demo')" id="nav-demo" 
                     class="nav-button inline-flex items-center px-6 py-3 rounded-full text-sm font-medium transition-all">
-                <span class="material-symbols-outlined mr-2">smartphone</span>
-                Demo App
+                <span class="material-symbols-outlined mr-2">laptop_mac</span>
+                Demo WebApp
             </button>
         </div>
     </nav>
