@@ -50,9 +50,40 @@
 
     <!-- Main Content -->
     <main class="max-w-7xl mx-auto px-4 pt-24" style="padding-bottom: 300px;">
-        <div id="overview" class="tab-content active"></div>
-        <div id="analysis" class="tab-content"></div>
-        <div id="demo" class="tab-content"></div>
+        <!-- Check if analysis is expired -->
+        <script>
+            fetch('env.json')
+                .then(response => response.json())
+                .then(env => {
+                    const currentDate = new Date();
+                    const expirationDate = new Date(env.expirationDate);
+
+                    if (env.analysisExpired || currentDate > expirationDate) {
+                        document.getElementById('main-content').innerHTML = `
+                            <div class="bg-white rounded-xl shadow-lg p-8 text-center transition-transform transform hover:scale-102 hover:shadow-xl">
+                                <h2 class="text-3xl font-extrabold text-gray-800 mb-4">Analisi Scaduta</h2>
+                                <p class="text-lg text-gray-600 mb-6">
+                                    Questa analisi di sviluppo è scaduta. Se hai bisogno di ulteriori informazioni o desideri discutere un nuovo progetto, ti invitiamo a contattarci.
+                                </p>
+                                <a href="mailto:info@stiip.it" class="inline-block px-6 py-3 bg-blue-600 font-medium rounded-lg shadow transition"
+                                   style="color: white; text-decoration: none;">
+                                    Contattaci via Email a <strong>info@stiip.it</strong>
+                                </a>
+                            </div>
+                        `;
+                    } else {
+                        document.getElementById('main-content').innerHTML = `
+                            <div id="overview" class="tab-content active"></div>
+                            <div id="analysis" class="tab-content"></div>
+                            <div id="demo" class="tab-content"></div>
+                        `;
+                        // Initialize tabs
+                        showTab('overview');
+                    }
+                })
+                .catch(error => console.error('Error loading environment file:', error));
+        </script>
+        <div id="main-content"></div>
     </main>
 
     <!-- Fixed Footer -->
